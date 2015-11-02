@@ -1,7 +1,8 @@
 class HomeController < ActionController::Base
-  before_action :authenticate_user!
+  include Devise::Controllers::Helpers
+  #before_action :authenticate_user!
 
   def index
-    render json: { a: 1 }
+    #render json: { a: 1 }
   end
 end
