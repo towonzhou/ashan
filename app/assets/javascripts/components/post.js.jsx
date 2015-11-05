@@ -1,6 +1,9 @@
-$(function() {
-  React.renderComponent(
-    <CommentBox url="comments.json" pollInterval={2000} />,
-    document.getElementById('content')
-  );
+var Records = React.createClass({
+  render: function() {
+    return (
+      <div>
+      <div>Title: {this.props.data}</div>
+      </div>
+    );
+  }
 })
